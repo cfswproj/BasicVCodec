@@ -1,13 +1,13 @@
 CMAKE_MINIMUM_REQUIRED ( VERSION 2.6 )
 ###################################################################################################
 
-SET ( PROJ 		                    Compreess_Assignment )
-SET ( SRC_DIR	                    "src/" )
+SET ( PROJ 		                Compreess_Assignment )
+SET ( SRC_DIR	                    	"src/" )
 SET ( OUTPUT_DIR	                "bin/" )
 FILE( GLOB_RECURSE INCL_FILES_SRC  	"${SRC_DIR}*.cpp" 
-									"${SRC_DIR}*.hpp"
-									"${SRC_DIR}*.h"
-	 )
+					"${SRC_DIR}*.hpp"
+					"${SRC_DIR}*.h"
+     )
 	 
 PROJECT ( ${PROJ} )
 # Files not immediately part of the current project should be referenced from  
