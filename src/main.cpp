@@ -9,7 +9,7 @@
 #include "encoder.hpp"
 #include "decoder.hpp"
 
-static int const frame_offset = 11;
+static int const frame_offset = 0;
 static int const frame_count  = 3;
 static int bytes_per_frame;// = tga_source_width * tga_source_height * tga_source_channels;
 
@@ -92,7 +92,7 @@ int main(int, char const**) {
 #else
 	static std::string const base_path   = "./data/";
 #endif
-	static std::string const input_name  = "Cam1_animation_Color_01";
+	static std::string const input_name  = "frame_";
 	static std::string const output_name = "result";
 
 	std::vector<uint8_t> inputs [frame_count];
