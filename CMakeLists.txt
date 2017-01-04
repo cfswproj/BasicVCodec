@@ -10,8 +10,7 @@ FILE( GLOB_RECURSE INCL_FILES_SRC  	"${SRC_DIR}*.cpp"
      )
 	 
 PROJECT ( ${PROJ} )
-# Files not immediately part of the current project should be referenced from  
-# the main CFLib root.
+
 INCLUDE_DIRECTORIES ( "../" )
 
 ADD_EXECUTABLE ( ${PROJECT_NAME} ${INCL_FILES_SRC} )
